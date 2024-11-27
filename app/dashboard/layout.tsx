@@ -1,4 +1,16 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
+import { Metadata } from 'next';
+
+// export const experimental_ppr = true;
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Admin',
+    default: 'Dashboard | Admin',
+  },
+  description:
+    "The official Next.js Course Dashboard's Admin Section, built with App Router.",
+};
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
